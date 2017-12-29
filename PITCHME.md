@@ -1,8 +1,10 @@
-# 明日からはじめるネットワーク運用自動化始動編
+# 明日からはじめるネットワーク運用自動化 始動編
 - 2018/1/9 10:00-12:00JST
-- Tsuchiya / 土屋 太二
+- Taiji Tsuchiya / 土屋 太二
 - ITOCHU Techno-Solutions America, Inc.
-- NetOpsCoding CommitteeTaiji
+- NetOpsCoding Committee
+
+---
 
 # 自己紹介
 - 土屋 太二/Taiji Tsuchiya
@@ -17,6 +19,8 @@
 - Community Activities
   - NetOpsCoding 運営委員
   - 過去JANOG プログラム委員, 実行委員長など
+
+---
 
 # 目次
 本発表では、プログラミング言語としてPython(3系)を例にします。
@@ -36,6 +40,8 @@
 - プログラムからルータにログイン、showコマンドを実行
 - プログラムからルータにコンフィグ投入
 - 自動化サンプル: BGP Peering作業を自動化する
+
+---
 
 # 変数(辞書型)
 辞書型変数 = { キー1:バリュー1, キー2:バリュー2, … }
@@ -60,6 +66,8 @@ $ python3 sample_dictionary.py
 router_A
 ```
 
+----
+
 # クラス
 
 ```python
@@ -79,7 +87,6 @@ class Router:
     def get_router_name(self):
         return self.router["router_name"]
 
-
 # Routerクラスのインスタンスを生成        
 router_A = Router()
 
@@ -90,5 +97,7 @@ router_name = router_A.get_router_name()
 print(router_name) # => 「Router A」が表示
 
 ```
+
+---
 
 # Thanks!
